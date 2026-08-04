@@ -15,28 +15,12 @@ Backend API for an ethical SACCO loaning workflow based on `Ujima_AI_Governance_
 
 ```bash
 npm install
-cp .env.example .env
 npm run db:generate
 npm run db:migrate
 npm run dev
 ```
 
 The API runs on `http://localhost:4000` by default.
-
-## Main Routes
-
-- `GET /health`
-- `POST /api/members`
-- `GET /api/members/:id`
-- `POST /api/consents`
-- `POST /api/loans/applications`
-- `GET /api/loans/applications/:id`
-- `POST /api/loans/applications/:id/triage`
-- `POST /api/loans/applications/:id/decision`
-- `GET /api/audits`
-- `POST /api/agents/scout/messages`
-- `POST /api/agents/guardian/triage/:applicationId`
-- `POST /api/agents/hunter/briefings/:applicationId`
 
 ## Governance Built Into the API
 
